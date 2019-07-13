@@ -13,17 +13,7 @@ const RevealExample = () => {
       <MenuBar>
         <MenuButton onClick={() => setReveal(!revealed)}>
           {
-            revealed ? (
-              <React.Fragment>
-                <span class="sr-only">Close menu</span>
-                <span class="fa fa-close" aria-hidden="true"></span>
-              </React.Fragment>
-            ) : (
-              <React.Fragment>
-                <span class="sr-only">Open menu</span>
-                <span class="fa fa-bars" aria-hidden="true"></span>
-              </React.Fragment>
-            )
+            revealed ? `Close menu` : `Open menu`
           }
         </MenuButton>
       </MenuBar>
